@@ -10,7 +10,28 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
     <body>
-        
+        <section class="section-center">
+            <!-- form -->
+            <form class="todo-form">
+                <p class="alert"></p>
+                <h3>Mi Lista To-Do</h3>
+                <h4 class="subtitle">Doble click para marcar como completada</h4>
+                <div class="form-control">
+                    <input type="text" id="task" class="todoInput" placeholder="Escribe tu tarea">
+                    <button type="submit" class="addBtn">Añadir</button>
+                    <button class="saveBtnEmptyList hide-btn">Guardar lista</button>
+                </div>
+            </form>
+            <!-- list -->
+            <div class="todo-container">
+                <div class="todo-list"></div>
+                <div class="btnsContainer">
+                    <button class="clearBtn">Quitar completadas</button>
+                    <button class="emptyBtn">Vaciar lista</button>
+                    <button class="saveBtn">Guardar lista</button>
+                </div>
+            </div>
+        </section>
         <!-- javascript -->
         <script src="js/index.js"></script>
     </body>
